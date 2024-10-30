@@ -297,68 +297,13 @@
                         <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
     
                         <p>
-                          This section, highlights the methodologies used for
-                          each sections of this study.
-                           The mobile application associated with this project
-                          serves several key functions. Through the submission of
-                          images, videos, and other pertinent data, it enables users to
-                          identify abnormal or normal behaviors exhibited by the
-                          fish, monitor the quality of water, schedule tank cleaning
-                          dates, recognize deceased and pregnant fish, and diagnose
-                          fish diseases.
-    
-                          <br><br>
-                          Following that, four sub components discussed: 
-    <ol>
-    <li>Fish movement Identification</li>
-    <li>Fish species, oviparous fish and dead fish identification</li>
-    <li>Early Disease detection and treatments</li>
-    <li>Identifying water clarity and calculate the next tank cleaning date</li>
-    </ol>
-                          <br><br>
-                          Identify unusual fish
-    behavior and investigate the factors that lead to unusual
-    behavior. This functionality is designed to confirm whether
-    fish behavior falls within normal parameters or exhibits
-    abnormalities. The authors experimented with several pretrained models. Ultimately, YOLOv8 emerged as the most
-    effective solution providing the best real-time accuracy in
-    fish behavior detection and classification. In this effort,
-    videos taken from different fish tank environments served
-    as training data for the model. The training process utilized
-    videos capturing various fish behaviors, including
-    schooling, feeding, resting, and swimming. YOLOv8
-    architecture was employed for fish behavior classification
-    and three distinct approaches were developed, through
-    hyperparameter tuning.
-                          <br><br>
-                          Identify fish
-                          species and count.The dataset comprising 300 images, each
-                          sized 500 x 500 pixels, including three different kinds of
-                          fish: Pterophyllum (Angelfish), Poecilia reticulata
-                          (Guppy), and Carassius auratus (Goldfish). A variety of
-                          representations of each species in varied environmental
-                          situations were ensured by the use of images sourced from
-                          multiple sources. Preprocessing measures included
-                          converting the color profile to RGB format, scaling photos
-                          at a consistent resolution, and standardizing image quality
-                          to reduce variability
-                          
-    
-                        </p>
-                        A component of the research setup involved the
-    integration of various sensors, including a Salinity Sensor,
-    Light Sensor, pH Sensor, DS18520 Digital Thermometer,
-    and Oxygen Level Sensor. These sensors capturing relevant
-    environmental parameters essential for disease
-    identification and ongoing monitoring throughout the
-    research process. Moreover, the Raspberry Pi 3 served as
-    the preferred hardware platform, offering a adaptable and
-    accessible computing environment
-                        <ol>
-                          <li> We present the results of our evaluations to assess the accuracy and effectiveness of the machine learning models proposed in our research.</li>
-                          <li> We examined the performance of each model across various metrics and scenarios.</li>
-                          <li> Our Discussions describe the main findings and implications of our research, highlighting the strengths, limitations, and potential avenues.</li>
-                        </ol>
+                          This methodology integrates advanced computational and recognition technologies to optimize real-time performance within an educational video-based learning system. At the core, NVIDIA’s Jetson Nano and TensorRT technologies enable efficient model deployment, with TensorRT performing layer fusion, precision calibration, and kernel auto-tuning to reduce latency and boost throughput, which is ideal for edge computing environments. To detect the lecturer in real time, we employ the Mobilenet-SSD-v2 model trained on the COCO dataset, optimized via TensorRT. Using ONVIF protocols for PTZ (Pan-Tilt-Zoom) camera control, the system dynamically follows the lecturer based on detection data, continuously streaming the video via RTSP. 
+
+Further enhancing the learning experience, the system leverages a custom-trained ResNet-18 model to recognize lecturer actions, which provides insights into engagement and presentation style. Integrated with facial recognition, this approach ensures accurate tracking of actions. For the content of the video, transcriptions are generated through OpenAI’s Whisper ASR model, which timestamps each word, enabling precise chapter segmentation. Text preprocessing techniques, such as tokenization, stopword removal, and lemmatization, ensure that only essential information is retained, while TextTiling identifies thematic shifts in the content. Google’s Flan-T5 model generates chapter titles, and the segments are stored in JSON format, allowing seamless integration with the video player. 
+
+The system also incorporates a gamified Q&A module to strengthen learning engagement, using TF-IDF and RAKE to extract keywords for question generation via the T5 model. Contextual distractors are created with sense2vec, allowing students to test their understanding through multiple-choice questions triggered during playback. Real-time collaboration is achieved with a decoupled client-server structure where Node.js and Express handle synchronization, Redis manages session data, and MongoDB stores persistent data. Video synchronization and real-time communication through Video.js, Socket.io, and WebRTC allow students to interact dynamically via text and voice chat during the session. 
+
+Finally, a recommendation system tailors content based on user feedback, processed through TF-IDF and a Multinomial Naive Bayes classifier. This classification enables the system to assess the perceived difficulty of the content, recommending videos that are either easier or more challenging based on user needs. Altogether, these elements create a responsive, interactive, and personalized learning environment that maximizes engagement and learning outcomes.
                       </div>
                     </div>
                   </div>
@@ -738,7 +683,7 @@
               <h4>Final Thesis</h4>
               <p>The document contains the Proposed solution to the research question, which was finalized after completing the research</p>
               <br>
-              <a href="https://drive.google.com/drive/folders/1LsKOMJV-wlfsRtKE15ePlUnp5xB_fR_n?usp=sharing" download>
+              <a href="https://drive.google.com/file/d/1fcapV2Sme9frkfntK6CoVTHRnVAyFADZ/view?usp=sharing" download>
               <button type="button" class="btn btn-outline-primary btn-sm btn-block bi bi-file-earmark-arrow-down-fill"> Download
 
               </button>
@@ -837,7 +782,7 @@
               <h4>Final presentation</h4>
               <p>100% Completion with deployed Solution</p>
               <br>
-              <a href="https://drive.google.com/drive/folders/1CQLbYnCUsqDZr4IhQTMmH5w4djTYbOr2?usp=sharing" download>
+              <a href="https://docs.google.com/presentation/d/1D-y7rfrJaDKINfK7mY-Aw6gKlolneDDq/edit?usp=sharing&ouid=100492148249577352882&rtpof=true&sd=true" download>
               <button type="button" class="btn btn-outline-primary btn-sm btn-block bi bi-file-earmark-arrow-down-fill"> Download
 
               </button>
@@ -873,7 +818,7 @@
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>edsenseltd@gmal.com</p>
+                <p>edsenseltd@gmail.com</p>
               </div>
 
               <div class="phone">
